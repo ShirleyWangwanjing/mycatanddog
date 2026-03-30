@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Be Vietnam Pro", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "Be Vietnam Pro", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #8e4900;
+  --color-primary-dim: #7d3f00;
+  --color-primary-container: #f99138;
+  --color-primary-fixed: #f99138;
+  --color-primary-fixed-dim: #e8842c;
+  
+  --color-secondary: #6b5849;
+  --color-secondary-dim: #5e4c3e;
+  --color-secondary-container: #f8decb;
+  --color-secondary-fixed: #f8decb;
+  --color-secondary-fixed-dim: #e9d0bd;
+
+  --color-tertiary: #715800;
+  --color-tertiary-dim: #634d00;
+  --color-tertiary-container: #fccc33;
+  --color-tertiary-fixed: #fccc33;
+  --color-tertiary-fixed-dim: #edbe23;
+
+  --color-surface: #f7f6f5;
+  --color-surface-dim: #d4d4d4;
+  --color-surface-bright: #f7f6f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f1f1f0;
+  --color-surface-container: #e8e8e7;
+  --color-surface-container-high: #e2e2e1;
+  --color-surface-container-highest: #dcdddc;
+
+  --color-on-surface: #2e2f2f;
+  --color-on-surface-variant: #5b5c5b;
+  --color-outline: #767776;
+  --color-outline-variant: #adadac;
+
+  --color-error: #b02500;
+  --color-error-dim: #b92902;
+  --color-error-container: #f95630;
+
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body antialiased;
+  }
+}
+
+.editorial-shadow {
+  box-shadow: 0 20px 40px -10px rgba(46, 47, 47, 0.08);
+}
+
+.editorial-gradient {
+  background: linear-gradient(135deg, #f99138 0%, #e8842c 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
